@@ -50,7 +50,7 @@ describe("auth-router.js", function() {
         .post("/api/auth/login")
         .send({ username: "bill", password: "billo" });
 
-      expect(authToken).not.toBeNull();
+      expect(authToken.text).not.toBeNull();
     });
   });
 });
