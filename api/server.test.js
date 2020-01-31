@@ -12,5 +12,8 @@ describe("server.js", () => {
       const response = await request(server).get("/");
       expect(response.type).toEqual("application/json");
     });
+    it("should run in the testing environment", function() {
+      expect(process.env.DB_ENV).toBe("testing");
+    });
   });
 });
