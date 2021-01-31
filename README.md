@@ -40,11 +40,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+## They allow us to grant temporary access to a server and control the circumstances under which that access ends.
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+## Bcrypt hashes passwords before saving them. A hash is a "one-way" transformation of a password, meaning that
+
+## the hash does not expose the original password, but hashing the original password will always produce the same result.
 
 - [ ] What does bcrypt do to slow down attackers?
 
+## Attackers need to somehow solve the hashing algorithm to get access to the original password
+
 - [ ] What are the three parts of the JSON Web Token?
+
+## Payload, Options, and the JWT secret
 
 ## Minimum Viable Product
 
